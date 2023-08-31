@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  font-family: "Quicksand", sans-serif;
+  user-select: none;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #0099f7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0099f7,
+    #f11712
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0099f7,
+    #f11712
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+*:focus {
+  outline: none;
+}
+.active {
+  transform: scale(1.03);
+  text-shadow: 2px 0px 11px #212427;
+  color: #f8f8ff !important;
+}
+.rmsc .dropdown-container {
+  width: 160px;
+  margin: 5px 0px;
+  background: transparent !important;
+  border-radius: 10px !important;
+  border: solid #212427 1px !important;
+  color: #212427 !important;
+}
+.gray,
+button {
+  color: #212427 !important;
+}
+button:hover {
+  color: #f8f8ff !important;
+}
+.ReactModal__Overlay {
+  background: #f8f8ffcc !important;
+  z-index: 1001 !important;
+}

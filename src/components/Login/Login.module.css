@@ -1,0 +1,79 @@
+.loginPageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.middleWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #adadca90;
+  padding: 20vh 20vw;
+  border-radius: 30px;
+}
+.inputWrapper {
+  border: solid #212427 1px;
+  color: #212427;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  margin: 5px;
+}
+.inputWrapper input {
+  color: #212427;
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+}
+.inputWrapper input::placeholder {
+  color: #484848;
+}
+.middleWrapper button,
+.loginModal button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background: transparent;
+  border: solid #212427 1px;
+  border-radius: 5px;
+  margin: 20px 0;
+  transition: 0.3s;
+  color: #212427;
+}
+.middleWrapper button:hover,
+.loginModal button:hover {
+  background: #212427;
+  color: #f8f8ff;
+}
+.signUpText {
+  margin-top: 10px;
+  text-align: center;
+  color: #212427;
+}
+.signUpText a {
+  text-decoration: none;
+  color: #f8f8ff;
+  font-weight: bold;
+}
+.loginModal {
+  flex-direction: column;
+  height: 50vh;
+  width: 80vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff99;
+  border-radius: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .loginModal {
+    width: 50vw;
+  }
+}

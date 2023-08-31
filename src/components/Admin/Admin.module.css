@@ -1,0 +1,149 @@
+.pageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100svh - 90px);
+  width: 90%;
+}
+.adminWrapper {
+  border: solid #212427 1px;
+  display: flex;
+  flex-direction: column;
+  background: #adadca90;
+  justify-content: center;
+  border-radius: 20px;
+  width: 90%;
+  align-items: center;
+  padding: 10px;
+  height: 90%;
+  overflow: auto;
+}
+.adminWrapper > a {
+  min-width: 100px;
+  text-align: center;
+  color: #212427;
+  text-decoration: none;
+  padding: 30px;
+  margin: 20px;
+  border: solid #212427 1px;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+.adminWrapper > a:hover,
+.adminWrapper > button:hover {
+  transform: scale(0.98);
+}
+.adminWrapper > button {
+  border: solid #212427 1px;
+  background: transparent;
+  border-radius: 14px;
+  padding: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 150px;
+  margin-top: 20px;
+}
+.adminWrapper > button:hover {
+  background: #212427;
+  color: #f8f8ff;
+}
+.adminWrapper > a:hover {
+  background: #212427;
+  color: #f8f8ff;
+  text-decoration: none;
+  padding: 30px;
+  margin: 20px;
+  border: solid #212427 1px;
+  border-radius: 14px;
+}
+.listItemWrapper {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.listItemWrapper > div:last-child > svg {
+  cursor: pointer;
+}
+.listWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: space-between;
+  overflow-y: auto;
+}
+.listItemWrapper > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.listItemWrapper > div:last-child > svg {
+  margin: 10px;
+}
+.listItemWrapper > div:first-child {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.listItemWrapper > div:first-child > span {
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.deleteModal {
+  border: solid #212427 1px;
+  flex-direction: column;
+  height: 80svh;
+  width: 80vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff99;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.deleteModal input {
+  color: #212427;
+  border: solid #212427 1px;
+  background: transparent;
+  padding: 10px;
+  margin: 5px 0px;
+  border-radius: 10px;
+}
+.deleteModal input::placeholder {
+  color: #484848;
+}
+.deleteModal > button,
+.deleteModal > div > button {
+  padding: 10px;
+  margin: 10px 0;
+  min-width: 100px;
+  background: transparent;
+  border: solid #212427 1px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.deleteModal > button:hover,
+.deleteModal > div > button:hover {
+  background: #212427;
+  color: #f8f8ff;
+}
+.listItemWrapper > div > img,
+.listItemWrapper > div:first-child > svg {
+  width: 70px;
+  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}

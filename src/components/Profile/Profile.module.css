@@ -1,0 +1,134 @@
+.profWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.midWrapper {
+  border-radius: 15px;
+  overflow-y: auto;
+  border: solid #212427 1px;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  background: #adadca90;
+  height: calc(100svh - 200px);
+}
+.pfp {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  padding: 1px;
+  border: solid #212427 1px;
+  border-radius: 50%;
+  margin: 10px 0;
+  color: #212427;
+}
+.deleteAccBtn,
+.deleteModal button {
+  padding: 10px;
+  margin-top: 20px;
+  min-width: 100px;
+  background: transparent;
+  border: solid #212427 1px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.deleteAccBtn:hover,
+.deleteModal button:hover {
+  background: #212427;
+  color: #f8f8ff;
+}
+.deleteModal {
+  flex-direction: column;
+  height: 50svh;
+  width: 80vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff99;
+  border-radius: 20px;
+  text-align: center;
+}
+.listWrapper {
+  display: flex;
+  overflow-x: auto;
+  margin-top: 10px;
+  width: 90%;
+}
+.oneListPreview {
+  overflow: hidden;
+  cursor: pointer;
+  margin: 5px;
+  min-height: 200px;
+  padding: 10px 15vw;
+  border: solid #212427 1px;
+  color: #212427;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 15px;
+  min-width: 120px;
+}
+.oneListPreview:hover {
+  background: #212427;
+  color: #f8f8ff;
+}
+.oneListPreview span {
+  margin-top: 20px;
+}
+.bottomBtnWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+.toggleWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.toggleWrapper > span {
+  margin-left: 8px;
+}
+.bottomBtnWrapper * {
+  margin: 5px;
+}
+.editListBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.editListBtn > * {
+  padding: 5px;
+}
+.deleteModal input {
+  color: #212427;
+  border: solid #212427 1px;
+  background: transparent;
+  margin: 5px 0px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.deleteModal input::placeholder {
+  color: #484848;
+}
+@media screen and (min-width: 768px) {
+  .oneListPreview {
+    padding: 30px 60px;
+  }
+}

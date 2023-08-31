@@ -1,0 +1,130 @@
+.mainMoviesWrapper {
+  width: 90vw;
+  border: solid #212427 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #adadca90;
+  padding: 40px 0;
+  border-radius: 20px;
+  height: calc(100svh - 200px);
+  overflow-y: auto;
+}
+.itemWrapper {
+  text-decoration: none;
+  color: #212427;
+  margin: 5px;
+  cursor: pointer;
+  width: 180px;
+  text-align: center;
+  border: solid #212427 1px;
+  padding: 30px;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+.itemWrapper:hover {
+  transform: scale(0.98);
+  background: #212427;
+  color: #f8f8ff;
+}
+.itemWrapper > img {
+  border-radius: 50%;
+  border: solid #212427 1px;
+}
+.itemWrapper > svg {
+  height: 180px;
+}
+.itemWrapper > img,
+.itemWrapper > svg {
+  aspect-ratio: 1;
+  width: 100%;
+  object-fit: cover;
+}
+.filterDiv {
+  border: solid #212427 1px;
+  margin: 20px 0;
+  border-radius: 20px;
+  background: #adadcaee;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.filterDiv > * {
+  padding: 5px 10px;
+}
+.onePersonWrapper > img,
+.onePersonWrapper > svg {
+  width: 100px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.onePersonWrapper > img {
+  border-radius: 50%;
+  border: solid #212427 1px;
+}
+.movieLink > img,
+.movieLink > svg {
+  width: 180px;
+  height: 250px;
+  object-fit: cover;
+}
+.onePersonWrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background: #adadca90;
+  height: calc(100svh - 160px);
+  border-radius: 20px;
+  width: 90%;
+  padding: 20px 0;
+}
+.actorMovies {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  margin: 10px;
+}
+.onePersonWrapper span {
+  margin: 10px 0 20px 0;
+}
+.movieLink {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #212427;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 20px;
+}
+.movieLink:hover {
+  transform: scale(0.98);
+}
+.linksWrapper svg {
+  color: #212427;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: #adadcaee;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.linksWrapper svg:hover {
+  background: #212427;
+  color: #f8f8ff;
+  transform: scale(0.95);
+}
+@media screen and (min-width: 768px) {
+  .filterDiv {
+    flex-direction: row;
+  }
+}

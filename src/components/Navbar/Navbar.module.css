@@ -1,0 +1,79 @@
+.navbarMain {
+  width: 100%;
+  z-index: 1000;
+  background: #adadcaee;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid #212427 1px;
+}
+.menuEntries {
+  background: inherit;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  height: 100svh;
+  transition: 0.3s;
+}
+.menuEntries a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+}
+.menuEntries a:hover {
+  transform: scale(0.99);
+}
+.title {
+  text-decoration: none;
+  padding-left: 10px;
+  font-size: 1.5rem;
+  color: #212427;
+  text-align: center;
+  height: 100%;
+  min-width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuIcon {
+  cursor: pointer;
+  height: 100%;
+  padding: 30px 10px 30px 30px;
+}
+.menuOpened {
+  height: 0svh;
+}
+@media screen and (min-width: 768px) {
+  .menuIcon {
+    display: none;
+  }
+  .menuEntries {
+    display: flex;
+  }
+  .menuEntries {
+    background: transparent;
+    height: 100%;
+    flex-direction: row;
+    position: static;
+  }
+  .menuEntries a {
+    transition: 0.3s;
+    padding: 0;
+    height: 100%;
+  }
+}

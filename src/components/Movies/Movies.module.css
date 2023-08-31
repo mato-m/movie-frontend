@@ -1,0 +1,224 @@
+.mainMoviesWrapper {
+  width: 90vw;
+  border: solid #212427 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #adadca90;
+  padding: 40px 0;
+  border-radius: 20px;
+  height: calc(100svh - 400px);
+  overflow-y: auto;
+}
+.itemWrapper {
+  text-decoration: none;
+  color: #212427;
+  margin: 5px;
+  cursor: pointer;
+  width: 180px;
+  text-align: center;
+  border: solid #212427 1px;
+  padding: 30px;
+  height: 350px;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+.itemWrapper:hover {
+  transform: scale(0.98);
+  background: #212427;
+  color: #f8f8ff;
+}
+.itemWrapper > img,
+.itemWrapper > svg {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+.filterDiv {
+  border: solid #212427 1px;
+  margin: 20px 0;
+  border-radius: 20px;
+  background: #adadcaee;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.filterDiv > * {
+  padding: 5px 10px;
+}
+.onePersonWrapper > img,
+.onePersonWrapper > svg {
+  height: 250px;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+.movieLink > img,
+.movieLink > svg {
+  width: 180px;
+  height: 250px;
+  object-fit: contain;
+}
+.onePersonWrapper {
+  overflow-y: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background: #adadca90;
+  height: calc(100svh - 160px);
+  border-radius: 20px;
+  width: 90%;
+  padding: 20px 0;
+}
+.linksWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.linksWrapper svg {
+  color: #212427;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: #adadcaee;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.linksWrapper svg:hover {
+  background: #212427;
+  color: #f8f8ff;
+  transform: scale(0.95);
+}
+.actorMovies {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  flex-shrink: 0;
+  padding: 20px 0;
+}
+.actorMovies > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: #212427;
+  margin: 10px;
+}
+.actorMovies > a > img,
+.actorMovies > a > svg {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+.actorMovies > a > img {
+  border: solid #212427 1px;
+  border-radius: 50%;
+}
+.actorMovies > a {
+  transition: 0.3s;
+}
+.actorMovies > a:hover {
+  transform: scale(0.96);
+}
+.personSpan {
+  margin: 10px 0 20px 0;
+}
+.movieLink {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #212427;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.movieLink > span {
+  text-align: center;
+  min-width: 100px;
+  padding: 10px 20px;
+  background: #adadcaee;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.movieLink:hover > span {
+  background: #212427;
+  color: #f8f8ff;
+  transform: scale(0.98);
+}
+.ratingDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ratingDiv > svg {
+  margin-left: 5px;
+  cursor: pointer;
+}
+.watchedBtn {
+  background: #adadcaee;
+  padding: 10px;
+  border: solid #212427 1px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 5px 0;
+}
+.watchedBtn:hover {
+  background: #212427;
+  color: #f8f8ff;
+  transform: scale(0.97);
+}
+
+.deleteModal button {
+  padding: 10px;
+  margin-top: 20px;
+  min-width: 100px;
+  background: transparent;
+  border: solid #212427 1px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.deleteModal button:hover {
+  background: #212427;
+  color: #f8f8ff;
+}
+.deleteModal {
+  flex-direction: column;
+  height: 50svh;
+  width: 80vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff99;
+  border-radius: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .filterDiv {
+    flex-direction: row;
+  }
+}
+
+.deleteModal select {
+  min-width: 150px;
+  background: transparent;
+  color: #212427 !important;
+  border-radius: 8px;
+  border: solid #212427 1px;
+  padding: 5px;
+}

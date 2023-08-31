@@ -1,0 +1,68 @@
+.mainMoviesWrapper {
+  width: 90vw;
+  border: solid #212427 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #adadca90;
+  padding: 40px 0;
+  border-radius: 20px;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+.itemWrapper {
+  position: relative;
+  text-decoration: none;
+  color: #212427;
+  margin: 5px;
+  cursor: pointer;
+  width: 180px;
+  text-align: center;
+  border: solid #212427 1px;
+  padding: 30px;
+  height: 350px;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+.itemWrapper:hover {
+  transform: scale(0.98);
+  background: #212427;
+  color: #f8f8ff;
+}
+.itemWrapper > img,
+.itemWrapper > svg {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.deleteModal button {
+  padding: 10px;
+  margin-top: 20px;
+  min-width: 100px;
+  background: transparent;
+  border: solid #212427 1px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.deleteModal button:hover {
+  background: #212427;
+  color: #f8f8ff;
+}
+.deleteModal {
+  flex-direction: column;
+  height: 50vh;
+  width: 80vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff99;
+  border-radius: 20px;
+  text-align: center;
+}
